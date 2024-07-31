@@ -1,0 +1,21 @@
+#Importamos Sympy
+
+import sympy as sym 
+
+# Definimos la funcion 
+
+def f(x): 
+    return x**2 
+
+#Definimos las variables simbolicas 
+
+x = sym.Symbol('x')
+x1 = sym.Symbol('x1')
+x2 = sym.Symbol('x2')
+
+#Calculamdo la integral 
+
+area = sym.integrate(f(x), (x1, x2))
+
+#Imprimimos el resultado 
+print(area)
